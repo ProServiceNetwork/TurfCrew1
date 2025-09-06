@@ -1,0 +1,14 @@
+[16-Aug-2025 07:33:14 America/Chicago] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in /home4/baldwina/public_html/website_4d5e2673/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home4/baldwina/public_html/website_4d5e2673/vendor/composer/autoload_real.php(25): require()
+#1 /home4/baldwina/public_html/website_4d5e2673/vendor/autoload.php(22): ComposerAutoloaderInit626b9e7ddd47fb7eff9aaa53cce0c9ad::getLoader()
+#2 /home4/baldwina/public_html/website_4d5e2673/public/index.php(13): require('/home4/baldwina...')
+#3 {main}
+  thrown in /home4/baldwina/public_html/website_4d5e2673/vendor/composer/platform_check.php on line 22
+[16-Aug-2025 07:48:28 America/Chicago] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in /home4/baldwina/public_html/website_4d5e2673/vendor/composer/platform_check.php:22
+Stack trace:
+#0 /home4/baldwina/public_html/website_4d5e2673/vendor/composer/autoload_real.php(25): require()
+#1 /home4/baldwina/public_html/website_4d5e2673/vendor/autoload.php(22): ComposerAutoloaderInit626b9e7ddd47fb7eff9aaa53cce0c9ad::getLoader()
+#2 /home4/baldwina/public_html/website_4d5e2673/public/index.php(13): require('/home4/baldwina...')
+#3 {main}
+  thrown in /home4/baldwina/public_html/website_4d5e2673/vendor/composer/platform_check.php on line 22
