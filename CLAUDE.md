@@ -8,7 +8,7 @@ This is a Laravel 11 application with Filament admin panel. It uses:
 
 - **Laravel Framework**: 11.31 with PHP 8.2+
 - **Filament Admin Panel**: v4.0 - accessible at `/admin` path with login authentication
-- **Database**: SQLite (database/database.sqlite)
+- **Database**: MySQL
 - **Frontend**: Vite + TailwindCSS for asset compilation
 - **Testing**: PHPUnit with Feature and Unit test suites
 
@@ -68,8 +68,7 @@ vendor/bin/pint    # PHP code formatting (Laravel Pint)
 - **Auto-discovery**: Resources, Pages, and Widgets are automatically discovered
 
 ### Database
-- **Driver**: SQLite 
-- **Location**: `database/database.sqlite`
+- **Driver**: MySQL
 - **Migrations**: `database/migrations/`
 - **Factories**: `database/factories/`
 - **Seeders**: `database/seeders/`
@@ -82,7 +81,7 @@ vendor/bin/pint    # PHP code formatting (Laravel Pint)
 
 ## Configuration Notes
 
-- Uses SQLite for simplicity
+- Uses MySQL database
 - Filament admin panel configured with authentication
 - Concurrent development script runs server, queue, logs, and Vite simultaneously
 - Standard Laravel 11 directory structure and conventions

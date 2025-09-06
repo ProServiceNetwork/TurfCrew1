@@ -9,15 +9,37 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
         <!-- Styles / Scripts -->
-        @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-            @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @else
-            <style>
-                /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Figtree,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.-bottom-16{bottom:-4rem}.-left-16{left:-4rem}.-left-20{left:-5rem}.top-0{top:0}.z-0{z-index:0}.\!row-span-1{grid-row:span 1 / span 1!important}.-mx-3{margin-left:-.75rem;margin-right:-.75rem}.-ml-px{margin-left:-1px}.ml-3{margin-left:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.\!hidden{display:none!important}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.size-12{width:3rem;height:3rem}.size-5{width:1.25rem;height:1.25rem}.size-6{width:1.5rem;height:1.5rem}.h-12{height:3rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-5{width:1.25rem}.w-\[calc\(100\%_\+_8rem\)\]{width:calc(100% + 8rem)}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-\[877px\]{max-width:877px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-default{cursor:default}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.\!flex-row{flex-direction:row!important}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-items-center{justify-items:center}.gap-2{gap:.5rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.rounded-\[10px\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-sm{border-radius:.125rem}.rounded-l-md{border-top-left-radius:.375rem;border-bottom-left-radius:.375rem}.rounded-r-md{border-top-right-radius:.375rem;border-bottom-right-radius:.375rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity: 1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-\[\#FF2D20\]\/10{background-color:#ff2d201a}.bg-gray-50{--tw-bg-opacity: 1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.from-transparent{--tw-gradient-from: transparent var(--tw-gradient-from-position);--tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.via-white{--tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), #fff var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-white{--tw-gradient-to: #fff var(--tw-gradient-to-position)}.to-zinc-900{--tw-gradient-to: #18181b var(--tw-gradient-to-position)}.stroke-\[\#FF2D20\]{stroke:#ff2d20}.object-cover{-o-object-fit:cover;object-fit:cover}.object-top{-o-object-position:top;object-position:top}.p-6{padding:1.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.pt-3{padding-top:.75rem}.text-center{text-align:center}.font-sans{font-family:Figtree,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji"}.text-sm{font-size:.875rem;line-height:1.25rem}.text-sm\/relaxed{font-size:.875rem;line-height:1.625}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-5{line-height:1.25rem}.text-black{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-black\/50{color:#00000080}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-\[0px_14px_34px_0px_rgba\(0\,0\,0\,0\.08\)\]{--tw-shadow: 0px 14px 34px 0px rgba(0,0,0,.08);--tw-shadow-colored: 0px 14px 34px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.ring-1{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.ring-black{--tw-ring-opacity: 1;--tw-ring-color: rgb(0 0 0 / var(--tw-ring-opacity, 1))}.ring-gray-300{--tw-ring-opacity: 1;--tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity, 1))}.ring-transparent{--tw-ring-color: transparent}.ring-white{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1))}.ring-white\/\[0\.05\]{--tw-ring-color: rgb(255 255 255 / .05)}.drop-shadow-\[0px_4px_34px_rgba\(0\,0\,0\,0\.06\)\]{--tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0,0,0,.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0px_4px_34px_rgba\(0\,0\,0\,0\.25\)\]{--tw-drop-shadow: drop-shadow(0px 4px 34px rgba(0,0,0,.25));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-150{transition-duration:.15s}.duration-300{transition-duration:.3s}.ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.selection\:bg-\[\#FF2D20\] *::-moz-selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:bg-\[\#FF2D20\] *::selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:text-white *::-moz-selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-\[\#FF2D20\]::-moz-selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:bg-\[\#FF2D20\]::selection{--tw-bg-opacity: 1;background-color:rgb(255 45 32 / var(--tw-bg-opacity, 1))}.selection\:text-white::-moz-selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-black:hover{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.hover\:text-black\/70:hover{color:#000000b3}.hover\:text-gray-400:hover{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.hover\:text-gray-500:hover{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.hover\:ring-black\/20:hover{--tw-ring-color: rgb(0 0 0 / .2)}.focus\:z-10:focus{z-index:10}.focus\:border-blue-300:focus{--tw-border-opacity: 1;border-color:rgb(147 197 253 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring:focus{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.focus-visible\:ring-1:focus-visible{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity, 1))}.active\:bg-gray-100:active{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.active\:text-gray-500:active{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.active\:text-gray-700:active{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:hidden{display:none}.sm\:size-16{width:4rem;height:4rem}.sm\:size-6{width:1.5rem;height:1.5rem}.sm\:flex-1{flex:1 1 0%}.sm\:items-center{align-items:center}.sm\:justify-between{justify-content:space-between}.sm\:pt-5{padding-top:1.25rem}}@media (min-width: 768px){.md\:row-span-3{grid-row:span 3 / span 3}}@media (min-width: 1024px){.lg\:col-start-2{grid-column-start:2}.lg\:h-16{height:4rem}.lg\:max-w-7xl{max-width:80rem}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:flex-col{flex-direction:column}.lg\:items-end{align-items:flex-end}.lg\:justify-center{justify-content:center}.lg\:gap-8{gap:2rem}.lg\:p-10{padding:2.5rem}.lg\:pb-10{padding-bottom:2.5rem}.lg\:pt-0{padding-top:0}.lg\:text-\[\#FF2D20\]{--tw-text-opacity: 1;color:rgb(255 45 32 / var(--tw-text-opacity, 1))}}.rtl\:flex-row-reverse:where([dir=rtl],[dir=rtl] *){flex-direction:row-reverse}@media (prefers-color-scheme: dark){.dark\:block{display:block}.dark\:hidden{display:none}.dark\:border-gray-600{--tw-border-opacity: 1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.dark\:bg-black{--tw-bg-opacity: 1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.dark\:bg-zinc-900{--tw-bg-opacity: 1;background-color:rgb(24 24 27 / var(--tw-bg-opacity, 1))}.dark\:via-zinc-900{--tw-gradient-to: rgb(24 24 27 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), #18181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.dark\:to-zinc-900{--tw-gradient-to: #18181b var(--tw-gradient-to-position)}.dark\:text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.dark\:text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:text-white\/50{color:#ffffff80}.dark\:text-white\/70{color:#ffffffb3}.dark\:ring-zinc-800{--tw-ring-opacity: 1;--tw-ring-color: rgb(39 39 42 / var(--tw-ring-opacity, 1))}.dark\:hover\:text-gray-300:hover{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.dark\:hover\:text-white:hover{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:hover\:text-white\/70:hover{color:#ffffffb3}.dark\:hover\:text-white\/80:hover{color:#fffc}.dark\:hover\:ring-zinc-700:hover{--tw-ring-opacity: 1;--tw-ring-color: rgb(63 63 70 / var(--tw-ring-opacity, 1))}.dark\:focus\:border-blue-700:focus{--tw-border-opacity: 1;border-color:rgb(29 78 216 / var(--tw-border-opacity, 1))}.dark\:focus\:border-blue-800:focus{--tw-border-opacity: 1;border-color:rgb(30 64 175 / var(--tw-border-opacity, 1))}.dark\:focus-visible\:ring-\[\#FF2D20\]:focus-visible{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 45 32 / var(--tw-ring-opacity, 1))}.dark\:focus-visible\:ring-white:focus-visible{--tw-ring-opacity: 1;--tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity, 1))}.dark\:active\:bg-gray-700:active{--tw-bg-opacity: 1;background-color:rgb(55 65 81 / var(--tw-bg-opacity, 1))}.dark\:active\:text-gray-300:active{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}}
-            </style>
-        @endif
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
+        <style>
+            .carousel-container {
+                position: relative;
+                width: 100%;
+                height: 24rem;
+            }
+            
+            .carousel-slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+            
+            .carousel-slide.active {
+                opacity: 1;
+            }
+            
+            .carousel-indicator.active {
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+        </style>
     </head>
     <body>
         <!-- 
@@ -176,131 +198,218 @@
         -->
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-success">
-            <div class="container">
-                <a class="navbar-brand text-white fw-bold" href="#">Turf Crew Alabama</a>
+        <nav class="bg-green-600 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo/Brand -->
+                    <div class="flex-shrink-0">
+                        <a href="#" class="text-white text-xl font-bold">Turf Crew Alabama</a>
+                    </div>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex lg:items-center lg:space-x-8">
+                        <!-- Left Navigation -->
+                        <div class="flex items-center space-x-4">
+                            <a href="#home" class="text-white hover:text-green-200 px-3 py-2 transition-colors">Dashboard</a>
+                            <a href="#about" class="text-white hover:text-green-200 px-3 py-2 transition-colors">About</a>
+                            
+                            <!-- Dropdown -->
+                            <div class="relative dropdown-container">
+                                <button type="button" class="text-white hover:text-green-200 px-3 py-2 flex items-center transition-colors dropdown-toggle" id="whyChooseUsDropdown">
+                                    Why Choose Us
+                                    <svg class="ml-1 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 dropdown-menu z-50">
+                                    <div class="py-1">
+                                        <a href="/no-contracts" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">No Contracts</a>
+                                        <a href="/professional-service" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Professional Service</a>
+                                        <a href="/electronic-payments" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Electronic Payments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Side Buttons -->
+                        <div class="flex items-center space-x-3">
+                            <!-- Request Service Button - visible at lg+ -->
+                            <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition-colors" onclick="openRequestModal()">
+                                Request Service Now
+                            </button>
+                            
+                            <!-- Authentication Buttons - only visible at xl+ -->
+                            <div class="hidden xl:flex xl:items-center xl:space-x-3">
+                                @if (Route::has('login'))
+                                    @auth
+                                        <a href="{{ url('/dashboard') }}" class="bg-transparent border border-white text-white hover:bg-white hover:text-green-600 font-semibold py-2 px-4 rounded transition-colors">Dashboard</a>
+                                    @else
+                                        <a href="{{ route('login') }}" class="bg-transparent border border-white text-white hover:bg-white hover:text-green-600 font-semibold py-2 px-4 rounded transition-colors">Login</a>
+                                        @if (Route::has('register'))
+                                            <a href="{{ route('register') }}" class="bg-white text-green-600 hover:bg-gray-100 font-semibold py-2 px-4 rounded transition-colors">Register</a>
+                                        @endif
+                                    @endauth
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile menu button (full collapse) -->
+                    <div class="lg:hidden">
+                        <button type="button" class="text-white hover:text-green-200 focus:outline-none focus:text-green-200" id="mobile-menu-button">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- User menu button (auth-only collapse) -->
+                    <div class="hidden lg:block xl:hidden relative">
+                        <button type="button" class="text-white hover:text-green-200 focus:outline-none focus:text-green-200" id="user-menu-button">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </button>
+                        <!-- User dropdown menu -->
+                        <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible user-dropdown z-50 transition-all duration-200">
+                            <div class="py-1">
+                                @if (Route::has('login'))
+                                    @auth
+                                        <a href="{{ url('/dashboard') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
+                                        <form method="POST" action="{{ route('logout') }}" class="block">
+                                            @csrf
+                                            <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</button>
+                                        </form>
+                                    @else
+                                        <a href="{{ route('login') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
+                                        @if (Route::has('register'))
+                                            <a href="{{ route('register') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Register</a>
+                                        @endif
+                                    @endauth
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#about">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="whyChooseUsDropdown" role="button" data-bs-toggle="dropdown">
-                                Why Choose Us
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/no-contracts">No Contracts</a></li>
-                                <li><a class="dropdown-item" href="/professional-service">Professional Service</a></li>
-                                <li><a class="dropdown-item" href="/electronic-payments">Electronic Payments</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <button class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#requestServiceModal">
-                        Request Service Now
-                    </button>
+                <!-- Mobile menu -->
+                <div class="md:hidden hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                        <a href="#home" class="text-white hover:text-green-200 block px-3 py-2 transition-colors">Dashboard</a>
+                        <a href="#about" class="text-white hover:text-green-200 block px-3 py-2 transition-colors">About</a>
+                        <a href="/no-contracts" class="text-white hover:text-green-200 block px-3 py-2 transition-colors">No Contracts</a>
+                        <a href="/professional-service" class="text-white hover:text-green-200 block px-3 py-2 transition-colors">Professional Service</a>
+                        <a href="/electronic-payments" class="text-white hover:text-green-200 block px-3 py-2 transition-colors">Electronic Payments</a>
+                    </div>
+                    <div class="pt-4 pb-3 border-t border-green-500">
+                        <div class="px-2 space-y-1">
+                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-4 rounded transition-colors" onclick="openRequestModal()">
+                                Request Service Now
+                            </button>
+                            @if (Route::has('login'))
+                                @auth
+                                    <a href="{{ url('/dashboard') }}" class="w-full bg-transparent border border-white text-white hover:bg-white hover:text-green-600 font-semibold py-2 px-4 rounded transition-colors block text-center mt-2">Dashboard</a>
+                                @else
+                                    <a href="{{ route('login') }}" class="w-full bg-transparent border border-white text-white hover:bg-white hover:text-green-600 font-semibold py-2 px-4 rounded transition-colors block text-center mt-2">Login</a>
+                                    @if (Route::has('register'))
+                                        <a href="{{ route('register') }}" class="w-full bg-white text-green-600 hover:bg-gray-100 font-semibold py-2 px-4 rounded transition-colors block text-center mt-2">Register</a>
+                                    @endif
+                                @endauth
+                            @endif
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
 
         <!-- Mobile Request Service Button (visible only on small screens) -->
-        <div class="d-block d-lg-none bg-light py-3">
-            <div class="container text-center">
-                <button class="btn btn-warning btn-lg fw-bold px-4" data-bs-toggle="modal" data-bs-target="#requestServiceModal">
+        <div class="block lg:hidden bg-gray-50 py-3">
+            <div class="text-center px-4">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg py-3 px-6 rounded transition-colors" onclick="openRequestModal()">
                     Request Service Now
                 </button>
             </div>
         </div>
 
         <!-- Hero Carousel -->
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        <div id="heroCarousel" class="relative overflow-hidden">
+            <!-- Carousel indicators -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+                <button type="button" class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all carousel-indicator active" data-slide="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all carousel-indicator" data-slide="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition-all carousel-indicator" data-slide="2"></button>
             </div>
             
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="bg-success d-flex align-items-center justify-content-center" style="height: 500px;">
-                        <div class="text-center text-white">
-                            <h1 class="display-4 fw-bold">Professional Lawn Care</h1>
-                            <p class="lead">Transform your lawn with Turf Crew Alabama</p>
-                        </div>
+            <div class="carousel-container">
+                <!-- Slide 1 -->
+                <div class="carousel-slide active bg-green-600 h-96 flex items-center justify-center">
+                    <div class="text-center text-white px-4">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Professional Lawn Care</h1>
+                        <p class="text-xl md:text-2xl">Transform your lawn with Turf Crew Alabama</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="bg-primary d-flex align-items-center justify-content-center" style="height: 500px;">
-                        <div class="text-center text-white">
-                            <h1 class="display-4 fw-bold">No Contracts Required</h1>
-                            <p class="lead">Flexible service without long-term commitments</p>
-                        </div>
+                <!-- Slide 2 -->
+                <div class="carousel-slide bg-blue-600 h-96 flex items-center justify-center">
+                    <div class="text-center text-white px-4">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">No Contracts Required</h1>
+                        <p class="text-xl md:text-2xl">Flexible service without long-term commitments</p>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="bg-warning d-flex align-items-center justify-content-center" style="height: 500px;">
-                        <div class="text-center text-dark">
-                            <h1 class="display-4 fw-bold">Electronic Payments</h1>
-                            <p class="lead">Convenient and secure payment options</p>
-                        </div>
+                <!-- Slide 3 -->
+                <div class="carousel-slide bg-yellow-500 h-96 flex items-center justify-center">
+                    <div class="text-center text-gray-800 px-4">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Electronic Payments</h1>
+                        <p class="text-xl md:text-2xl">Convenient and secure payment options</p>
                     </div>
                 </div>
             </div>
             
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <!-- Navigation arrows -->
+            <button class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10" id="carousel-prev">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors z-10" id="carousel-next">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
             </button>
         </div>
 
         <!-- Why Choose Us Cards -->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="row g-4">
+        <section class="py-12 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <!-- No Contracts Card -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-success fw-bold">No Contracts</h5>
-                                <p class="card-text">We believe in earning your trust through quality service, not binding contracts. You're free to choose our services based on satisfaction and results, giving you complete flexibility and peace of mind.</p>
-                                <div class="mt-auto">
-                                    <a href="/no-contracts" class="btn btn-success">Read More</a>
-                                </div>
+                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+                        <div class="p-6 flex flex-col h-full">
+                            <h5 class="text-xl font-bold text-green-600 mb-4">No Contracts</h5>
+                            <p class="text-gray-600 flex-grow">We believe in earning your trust through quality service, not binding contracts. You're free to choose our services based on satisfaction and results, giving you complete flexibility and peace of mind.</p>
+                            <div class="mt-6">
+                                <a href="/no-contracts" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300">Read More</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Professional Service Card -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-success fw-bold">Professional Service</h5>
-                                <p class="card-text">Our trained professionals use commercial-grade equipment and proven techniques to deliver exceptional results. We take pride in treating every lawn with the attention and expertise it deserves.</p>
-                                <div class="mt-auto">
-                                    <a href="/professional-service" class="btn btn-success">Read More</a>
-                                </div>
+                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+                        <div class="p-6 flex flex-col h-full">
+                            <h5 class="text-xl font-bold text-green-600 mb-4">Professional Service</h5>
+                            <p class="text-gray-600 flex-grow">Our trained professionals use commercial-grade equipment and proven techniques to deliver exceptional results. We take pride in treating every lawn with the attention and expertise it deserves.</p>
+                            <div class="mt-6">
+                                <a href="/professional-service" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300">Read More</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Electronic Payments Card -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-success fw-bold">Electronic Payments</h5>
-                                <p class="card-text">Skip the hassle of checks and cash with our secure electronic payment system. Automatic billing and online payment options make managing your lawn care service simple and convenient.</p>
-                                <div class="mt-auto">
-                                    <a href="/electronic-payments" class="btn btn-success">Read More</a>
-                                </div>
+                    <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 h-full flex flex-col">
+                        <div class="p-6 flex flex-col h-full">
+                            <h5 class="text-xl font-bold text-green-600 mb-4">Electronic Payments</h5>
+                            <p class="text-gray-600 flex-grow">Skip the hassle of checks and cash with our secure electronic payment system. Automatic billing and online payment options make managing your lawn care service simple and convenient.</p>
+                            <div class="mt-6">
+                                <a href="/electronic-payments" class="inline-block px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors duration-300">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -309,147 +418,162 @@
         </section>
 
         <!-- Request Service Modal -->
-        <div class="modal fade" id="requestServiceModal" tabindex="-1" aria-labelledby="requestServiceModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header bg-success text-white">
-                        <h5 class="modal-title" id="requestServiceModalLabel">
-                            <i class="fas fa-leaf me-2"></i>Request Service Now
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50" id="requestServiceModal">
+            <div class="relative top-20 mx-auto p-5 border w-11/12 max-w-2xl shadow-lg rounded-md bg-white">
+                <div class="bg-green-600 text-white p-4 rounded-t-md -m-5 mb-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-medium" id="requestServiceModalLabel">
+                            <svg class="inline w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2L3 7v11c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V7l-7-5z"/>
+                            </svg>Request Service Now
+                        </h3>
+                        <button type="button" class="text-white hover:text-gray-300 focus:outline-none" onclick="closeModal('requestServiceModal')" aria-label="Close">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <form id="serviceRequestForm" action="/request-service" method="POST" novalidate>
-                        @csrf
-                        <div class="modal-body">
-                            <div class="row">
-                                <!-- First Name -->
-                                <div class="col-md-6 mb-3">
-                                    <label for="first_name" class="form-label">First Name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="first_name" name="first_name" required maxlength="50" pattern="[A-Za-z\s\-'.]+" title="Only letters, spaces, hyphens, apostrophes, and periods allowed">
-                                    <div class="invalid-feedback">Please provide a valid first name.</div>
-                                </div>
-                                
-                                <!-- Last Name -->
-                                <div class="col-md-6 mb-3">
-                                    <label for="last_name" class="form-label">Last Name <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="last_name" name="last_name" required maxlength="50" pattern="[A-Za-z\s\-'.]+" title="Only letters, spaces, hyphens, apostrophes, and periods allowed">
-                                    <div class="invalid-feedback">Please provide a valid last name.</div>
-                                </div>
+                </div>
+                <form id="serviceRequestForm" action="/request-service" method="POST" novalidate>
+                    @csrf
+                    <div class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- First Name -->
+                            <div>
+                                <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">First Name <span class="text-red-500">*</span></label>
+                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="first_name" name="first_name" required maxlength="50" pattern="[A-Za-z\s\-'.]+" title="Only letters, spaces, hyphens, apostrophes, and periods allowed">
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid first name.</div>
                             </div>
                             
-                            <!-- Address -->
-                            <div class="mb-3">
-                                <label for="address" class="form-label">Street Address <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="address" name="address" required maxlength="100" placeholder="123 Main Street">
-                                <div class="invalid-feedback">Please provide a valid street address.</div>
-                            </div>
-                            
-                            <div class="row">
-                                <!-- City -->
-                                <div class="col-md-4 mb-3">
-                                    <label for="city" class="form-label">City <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="city" name="city" required maxlength="50" pattern="[A-Za-z\s\-'.]+" title="Only letters, spaces, hyphens, apostrophes, and periods allowed">
-                                    <div class="invalid-feedback">Please provide a valid city name.</div>
-                                </div>
-                                
-                                <!-- State -->
-                                <div class="col-md-4 mb-3">
-                                    <label for="state" class="form-label">State <span class="text-danger">*</span></label>
-                                    <select class="form-select" id="state" name="state" required>
-                                        <option value="">Choose state...</option>
-                                        <option value="AL">AL - Alabama</option>
-                                        <option value="AK">AK - Alaska</option>
-                                        <option value="AZ">AZ - Arizona</option>
-                                        <option value="AR">AR - Arkansas</option>
-                                        <option value="CA">CA - California</option>
-                                        <option value="CO">CO - Colorado</option>
-                                        <option value="CT">CT - Connecticut</option>
-                                        <option value="DE">DE - Delaware</option>
-                                        <option value="FL">FL - Florida</option>
-                                        <option value="GA">GA - Georgia</option>
-                                        <option value="HI">HI - Hawaii</option>
-                                        <option value="ID">ID - Idaho</option>
-                                        <option value="IL">IL - Illinois</option>
-                                        <option value="IN">IN - Indiana</option>
-                                        <option value="IA">IA - Iowa</option>
-                                        <option value="KS">KS - Kansas</option>
-                                        <option value="KY">KY - Kentucky</option>
-                                        <option value="LA">LA - Louisiana</option>
-                                        <option value="ME">ME - Maine</option>
-                                        <option value="MD">MD - Maryland</option>
-                                        <option value="MA">MA - Massachusetts</option>
-                                        <option value="MI">MI - Michigan</option>
-                                        <option value="MN">MN - Minnesota</option>
-                                        <option value="MS">MS - Mississippi</option>
-                                        <option value="MO">MO - Missouri</option>
-                                        <option value="MT">MT - Montana</option>
-                                        <option value="NE">NE - Nebraska</option>
-                                        <option value="NV">NV - Nevada</option>
-                                        <option value="NH">NH - New Hampshire</option>
-                                        <option value="NJ">NJ - New Jersey</option>
-                                        <option value="NM">NM - New Mexico</option>
-                                        <option value="NY">NY - New York</option>
-                                        <option value="NC">NC - North Carolina</option>
-                                        <option value="ND">ND - North Dakota</option>
-                                        <option value="OH">OH - Ohio</option>
-                                        <option value="OK">OK - Oklahoma</option>
-                                        <option value="OR">OR - Oregon</option>
-                                        <option value="PA">PA - Pennsylvania</option>
-                                        <option value="RI">RI - Rhode Island</option>
-                                        <option value="SC">SC - South Carolina</option>
-                                        <option value="SD">SD - South Dakota</option>
-                                        <option value="TN">TN - Tennessee</option>
-                                        <option value="TX">TX - Texas</option>
-                                        <option value="UT">UT - Utah</option>
-                                        <option value="VT">VT - Vermont</option>
-                                        <option value="VA">VA - Virginia</option>
-                                        <option value="WA">WA - Washington</option>
-                                        <option value="WV">WV - West Virginia</option>
-                                        <option value="WI">WI - Wisconsin</option>
-                                        <option value="WY">WY - Wyoming</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a state.</div>
-                                </div>
-                                
-                                <!-- Zip Code -->
-                                <div class="col-md-4 mb-3">
-                                    <label for="zip" class="form-label">Zip Code <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="zip" name="zip" required pattern="[0-9]{5}(-[0-9]{4})?" maxlength="10" placeholder="12345" title="Enter 5 digit zip code or 5+4 format">
-                                    <div class="invalid-feedback">Please provide a valid 5-digit zip code.</div>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <!-- Phone Number -->
-                                <div class="col-md-6 mb-3">
-                                    <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="123-456-7890" title="Format: 123-456-7890">
-                                    <div class="invalid-feedback">Please provide a valid phone number (123-456-7890).</div>
-                                </div>
-                                
-                                <!-- Email -->
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" id="email" name="email" required maxlength="100" placeholder="john@example.com">
-                                    <div class="invalid-feedback">Please provide a valid email address.</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Privacy Notice -->
-                            <div class="alert alert-info small mt-3">
-                                <i class="fas fa-info-circle me-2"></i>
-                                <strong>Privacy Notice:</strong> Your information will only be used to contact you about lawn care services. We never share your personal information with third parties.
+                            <!-- Last Name -->
+                            <div>
+                                <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">Last Name <span class="text-red-500">*</span></label>
+                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="last_name" name="last_name" required maxlength="50" pattern="[A-Za-z\s\-'.]+" title="Only letters, spaces, hyphens, apostrophes, and periods allowed">
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid last name.</div>
                             </div>
                         </div>
                         
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-success">
-                                <i class="fas fa-paper-plane me-2"></i>Submit Request
-                            </button>
+                        <!-- Address -->
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-gray-700 mb-1">Street Address <span class="text-red-500">*</span></label>
+                            <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="address" name="address" required maxlength="100" placeholder="123 Main Street">
+                            <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid street address.</div>
                         </div>
-                    </form>
-                </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <!-- City -->
+                            <div>
+                                <label for="city" class="block text-sm font-medium text-gray-700 mb-1">City <span class="text-red-500">*</span></label>
+                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="city" name="city" required maxlength="50" pattern="[A-Za-z\s\-'.]+" title="Only letters, spaces, hyphens, apostrophes, and periods allowed">
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid city name.</div>
+                            </div>
+                            
+                            <!-- State -->
+                            <div>
+                                <label for="state" class="block text-sm font-medium text-gray-700 mb-1">State <span class="text-red-500">*</span></label>
+                                <select class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="state" name="state" required>
+                                    <option value="">Choose state...</option>
+                                    <option value="AL">AL - Alabama</option>
+                                    <option value="AK">AK - Alaska</option>
+                                    <option value="AZ">AZ - Arizona</option>
+                                    <option value="AR">AR - Arkansas</option>
+                                    <option value="CA">CA - California</option>
+                                    <option value="CO">CO - Colorado</option>
+                                    <option value="CT">CT - Connecticut</option>
+                                    <option value="DE">DE - Delaware</option>
+                                    <option value="FL">FL - Florida</option>
+                                    <option value="GA">GA - Georgia</option>
+                                    <option value="HI">HI - Hawaii</option>
+                                    <option value="ID">ID - Idaho</option>
+                                    <option value="IL">IL - Illinois</option>
+                                    <option value="IN">IN - Indiana</option>
+                                    <option value="IA">IA - Iowa</option>
+                                    <option value="KS">KS - Kansas</option>
+                                    <option value="KY">KY - Kentucky</option>
+                                    <option value="LA">LA - Louisiana</option>
+                                    <option value="ME">ME - Maine</option>
+                                    <option value="MD">MD - Maryland</option>
+                                    <option value="MA">MA - Massachusetts</option>
+                                    <option value="MI">MI - Michigan</option>
+                                    <option value="MN">MN - Minnesota</option>
+                                    <option value="MS">MS - Mississippi</option>
+                                    <option value="MO">MO - Missouri</option>
+                                    <option value="MT">MT - Montana</option>
+                                    <option value="NE">NE - Nebraska</option>
+                                    <option value="NV">NV - Nevada</option>
+                                    <option value="NH">NH - New Hampshire</option>
+                                    <option value="NJ">NJ - New Jersey</option>
+                                    <option value="NM">NM - New Mexico</option>
+                                    <option value="NY">NY - New York</option>
+                                    <option value="NC">NC - North Carolina</option>
+                                    <option value="ND">ND - North Dakota</option>
+                                    <option value="OH">OH - Ohio</option>
+                                    <option value="OK">OK - Oklahoma</option>
+                                    <option value="OR">OR - Oregon</option>
+                                    <option value="PA">PA - Pennsylvania</option>
+                                    <option value="RI">RI - Rhode Island</option>
+                                    <option value="SC">SC - South Carolina</option>
+                                    <option value="SD">SD - South Dakota</option>
+                                    <option value="TN">TN - Tennessee</option>
+                                    <option value="TX">TX - Texas</option>
+                                    <option value="UT">UT - Utah</option>
+                                    <option value="VT">VT - Vermont</option>
+                                    <option value="VA">VA - Virginia</option>
+                                    <option value="WA">WA - Washington</option>
+                                    <option value="WV">WV - West Virginia</option>
+                                    <option value="WI">WI - Wisconsin</option>
+                                    <option value="WY">WY - Wyoming</option>
+                                </select>
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please select a state.</div>
+                            </div>
+                            
+                            <!-- Zip Code -->
+                            <div>
+                                <label for="zip" class="block text-sm font-medium text-gray-700 mb-1">Zip Code <span class="text-red-500">*</span></label>
+                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="zip" name="zip" required pattern="[0-9]{5}(-[0-9]{4})?" maxlength="10" placeholder="12345" title="Enter 5 digit zip code or 5+4 format">
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid 5-digit zip code.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Phone Number -->
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="123-456-7890" title="Format: 123-456-7890">
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid phone number (123-456-7890).</div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address <span class="text-red-500">*</span></label>
+                                <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-green-500 focus:border-green-500" id="email" name="email" required maxlength="100" placeholder="john@example.com">
+                                <div class="text-red-500 text-sm mt-1 hidden invalid-feedback">Please provide a valid email address.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Privacy Notice -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-md p-4">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                                </svg>
+                                <div class="text-sm text-blue-800">
+                                    <strong>Privacy Notice:</strong> Your information will only be used to contact you about lawn care services. We never share your personal information with third parties.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-end space-x-3 pt-6 border-t">
+                        <button type="button" class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" onclick="closeModal('requestServiceModal')">Cancel</button>
+                        <button type="submit" class="px-6 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 flex items-center">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                            Submit Request
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         
@@ -514,7 +638,7 @@
                             alert(data.message);
                             form.reset();
                             form.classList.remove('was-validated');
-                            bootstrap.Modal.getInstance(document.getElementById('requestServiceModal')).hide();
+                            closeModal('requestServiceModal');
                         } else {
                             if (data.errors) {
                                 let errorMessage = 'Please correct the following errors:\n';
@@ -532,13 +656,114 @@
                         alert('An error occurred while submitting your request. Please try again.');
                     })
                     .finally(() => {
-                        submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Submit Request';
+                        submitBtn.innerHTML = '<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>Submit Request';
                         submitBtn.disabled = false;
                     });
                 }
                 
                 form.classList.add('was-validated');
             });
+            
+            // Carousel functionality
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-slide');
+            const indicators = document.querySelectorAll('.carousel-indicator');
+            const totalSlides = slides.length;
+            
+            function showSlide(index) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                slides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            function nextSlide() {
+                const next = (currentSlide + 1) % totalSlides;
+                showSlide(next);
+            }
+            
+            function prevSlide() {
+                const prev = (currentSlide - 1 + totalSlides) % totalSlides;
+                showSlide(prev);
+            }
+            
+            // Carousel controls
+            document.getElementById('carousel-next').addEventListener('click', nextSlide);
+            document.getElementById('carousel-prev').addEventListener('click', prevSlide);
+            
+            // Carousel indicators
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => showSlide(index));
+            });
+            
+            // Auto-rotate carousel
+            setInterval(nextSlide, 5000);
+            
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Dropdown functionality - "Why Choose Us"
+            const dropdownToggle = document.getElementById('whyChooseUsDropdown');
+            const dropdownMenu = dropdownToggle?.nextElementSibling;
+            
+            if (dropdownToggle && dropdownMenu) {
+                dropdownToggle.addEventListener('click', function() {
+                    dropdownMenu.classList.toggle('opacity-0');
+                    dropdownMenu.classList.toggle('invisible');
+                });
+            }
+            
+            // User menu dropdown functionality
+            const userMenuButton = document.getElementById('user-menu-button');
+            const userDropdown = document.querySelector('.user-dropdown');
+            
+            if (userMenuButton && userDropdown) {
+                userMenuButton.addEventListener('click', function() {
+                    userDropdown.classList.toggle('opacity-0');
+                    userDropdown.classList.toggle('invisible');
+                });
+            }
+            
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function(event) {
+                // Close "Why Choose Us" dropdown
+                if (dropdownToggle && dropdownMenu && !dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.add('opacity-0');
+                    dropdownMenu.classList.add('invisible');
+                }
+                
+                // Close user dropdown
+                if (userMenuButton && userDropdown && !userMenuButton.contains(event.target) && !userDropdown.contains(event.target)) {
+                    userDropdown.classList.add('opacity-0');
+                    userDropdown.classList.add('invisible');
+                }
+            });
+        });
+        
+        // Modal functions (global scope)
+        function openRequestModal() {
+            document.getElementById('requestServiceModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(event) {
+            const modal = document.getElementById('requestServiceModal');
+            if (event.target === modal) {
+                closeModal('requestServiceModal');
+            }
         });
         </script>
     </body>

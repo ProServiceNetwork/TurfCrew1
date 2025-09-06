@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ServiceRequestConfirmation;
+use App\Models\ServiceRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Log;
-use App\Models\ServiceRequest;
-use App\Mail\ServiceRequestConfirmation;
 
 class ServiceRequestController extends Controller
 {
@@ -26,7 +26,7 @@ class ServiceRequestController extends Controller
                     'regex:/^[A-Za-z\s\-\'.]+$/',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/<[^>]*>/', $value)) {
-                            $fail('The ' . $attribute . ' contains invalid characters.');
+                            $fail('The '.$attribute.' contains invalid characters.');
                         }
                     },
                 ],
@@ -37,7 +37,7 @@ class ServiceRequestController extends Controller
                     'regex:/^[A-Za-z\s\-\'.]+$/',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/<[^>]*>/', $value)) {
-                            $fail('The ' . $attribute . ' contains invalid characters.');
+                            $fail('The '.$attribute.' contains invalid characters.');
                         }
                     },
                 ],
@@ -47,11 +47,11 @@ class ServiceRequestController extends Controller
                     'max:100',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/<[^>]*>/', $value)) {
-                            $fail('The ' . $attribute . ' contains invalid characters.');
+                            $fail('The '.$attribute.' contains invalid characters.');
                         }
                         // Block common SQL injection patterns
                         if (preg_match('/(\b(SELECT|INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|EXEC)\b)/i', $value)) {
-                            $fail('The ' . $attribute . ' contains invalid characters.');
+                            $fail('The '.$attribute.' contains invalid characters.');
                         }
                     },
                 ],
@@ -62,7 +62,7 @@ class ServiceRequestController extends Controller
                     'regex:/^[A-Za-z\s\-\'.]+$/',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/<[^>]*>/', $value)) {
-                            $fail('The ' . $attribute . ' contains invalid characters.');
+                            $fail('The '.$attribute.' contains invalid characters.');
                         }
                     },
                 ],
@@ -88,7 +88,7 @@ class ServiceRequestController extends Controller
                     'max:100',
                     function ($attribute, $value, $fail) {
                         if (preg_match('/<[^>]*>/', $value)) {
-                            $fail('The ' . $attribute . ' contains invalid characters.');
+                            $fail('The '.$attribute.' contains invalid characters.');
                         }
                     },
                 ],
@@ -113,7 +113,7 @@ class ServiceRequestController extends Controller
             if ($validator->fails()) {
                 return response()->json([
                     'success' => false,
-                    'errors' => $validator->errors()
+                    'errors' => $validator->errors(),
                 ], 422);
             }
 
@@ -135,20 +135,20 @@ class ServiceRequestController extends Controller
                 if ($key !== 'state' && preg_match('/javascript:|data:|vbscript:|onload=|onerror=/i', $value)) {
                     return response()->json([
                         'success' => false,
-                        'message' => 'Invalid input detected.'
+                        'message' => 'Invalid input detected.',
                     ], 400);
                 }
             }
 
             // Rate limiting check (basic implementation)
             $clientIP = $request->ip();
-            $cacheKey = 'service_request_' . $clientIP;
+            $cacheKey = 'service_request_'.$clientIP;
             $requestCount = cache($cacheKey, 0);
-            
+
             if ($requestCount >= 5) { // Max 5 requests per hour
                 return response()->json([
                     'success' => false,
-                    'message' => 'Too many requests. Please try again later.'
+                    'message' => 'Too many requests. Please try again later.',
                 ], 429);
             }
 
@@ -172,17 +172,17 @@ class ServiceRequestController extends Controller
             // Log the service request for admin review
             Log::info('New service request received', [
                 'id' => $serviceRequest->id,
-                'customer' => $sanitizedData['first_name'] . ' ' . $sanitizedData['last_name'],
+                'customer' => $sanitizedData['first_name'].' '.$sanitizedData['last_name'],
                 'ip' => $clientIP,
-                'timestamp' => now()
+                'timestamp' => now(),
             ]);
-            
+
             // Send confirmation email to customer
             try {
                 Mail::to($serviceRequest->email)->send(new ServiceRequestConfirmation($serviceRequest));
                 Log::info('Confirmation email sent successfully', ['request_id' => $serviceRequest->id]);
             } catch (\Exception $e) {
-                Log::error('Failed to send confirmation email: ' . $e->getMessage());
+                Log::error('Failed to send confirmation email: '.$e->getMessage());
                 // Don't fail the request if email fails
             }
 
@@ -190,21 +190,21 @@ class ServiceRequestController extends Controller
             try {
                 $this->sendNotificationEmail($sanitizedData, $serviceRequest->id);
             } catch (\Exception $e) {
-                Log::error('Failed to send notification email: ' . $e->getMessage());
+                Log::error('Failed to send notification email: '.$e->getMessage());
                 // Don't fail the request if email fails
             }
 
             return response()->json([
                 'success' => true,
-                'message' => 'Thank you! We will contact you soon to discuss your lawn care needs.'
+                'message' => 'Thank you! We will contact you soon to discuss your lawn care needs.',
             ]);
 
         } catch (\Exception $e) {
-            Log::error('Service request error: ' . $e->getMessage());
-            
+            Log::error('Service request error: '.$e->getMessage());
+
             return response()->json([
                 'success' => false,
-                'message' => 'An error occurred while processing your request. Please try again.'
+                'message' => 'An error occurred while processing your request. Please try again.',
             ], 500);
         }
     }
@@ -216,8 +216,8 @@ class ServiceRequestController extends Controller
     {
         // You can implement email sending here
         // This is a placeholder for the email functionality
-        
-        $subject = 'New Service Request #' . $requestId . ' - ' . $data['first_name'] . ' ' . $data['last_name'];
+
+        $subject = 'New Service Request #'.$requestId.' - '.$data['first_name'].' '.$data['last_name'];
         $message = "New lawn care service request:\n\n";
         $message .= "Request ID: #{$requestId}\n";
         $message .= "Name: {$data['first_name']} {$data['last_name']}\n";
@@ -225,7 +225,7 @@ class ServiceRequestController extends Controller
         $message .= "City: {$data['city']}, {$data['state']} {$data['zip']}\n";
         $message .= "Phone: {$data['phone']}\n";
         $message .= "Email: {$data['email']}\n";
-        $message .= "Submitted: " . now()->format('F j, Y g:i A');
+        $message .= 'Submitted: '.now()->format('F j, Y g:i A');
 
         // Uncomment and configure when ready to send emails
         /*

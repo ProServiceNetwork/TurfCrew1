@@ -17,7 +17,7 @@ class ServiceRequest extends Model
         'email',
         'ip_address',
         'user_agent',
-        'processed_at'
+        'processed_at',
     ];
 
     protected $casts = [
