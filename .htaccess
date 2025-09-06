@@ -12,7 +12,6 @@ Require all denied
 </Files>
 
 <IfModule mod_alias.c>
-RedirectMatch 301 ^/$ https://turfcrewal.com
 </IfModule>
 
 # php -- BEGIN cPanel-generated handler, do not edit
